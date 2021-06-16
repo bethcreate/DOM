@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>DOM</title>
+</head>
+<body>
+    <div class="createClass">
+        <p>LisaLab</p>
+        <p>Javascript</p>
+        <p id="date"></p>
+
+
+    </div>
+    <script>
+
+        function addColor(){
+            var a=document.getElementsByClassName("createClass");
+            a[0].style.color="Red";
+
+        }
+        addColor();
+
+        function addDate(){
+            document.getElementById("date").value = ("06:16:2021");
+        }
+        addDate();
+    
+   
+   
+
+        </script>
+        
+    
+</body>
+</html>
+
+<!--  question2
+ Callback functin - This is when you pass a function to another function as an argument
+example of a callback function
+  function foo(callback){
+      console.log("My name is John Doe");
+      if (typeof callback=="function")
+          callback();
+  }
+    function foo() {
+     console.log("This is a callback function.")
+});
+
+Question 3 -->
+
+    <!-- var lisaLab = {
+        name: "bar",
+        func: function() {
+            var self = this;
+            console.log("outer func:  this.name = " + this.name);
+            console.log("outer func:  self.name = " + self.name);
+            (function() {
+                console.log("inner func:  this.name = " + this.name);
+                console.log("inner func:  self.name = " + self.name);
+            }());
+        }
+    };
+    
+    lisaLab.func();
+bar   this is bacause in global scopes inner function is able to access the outer function when it is not in strict mode
+bar   in nested scopes the inner function can still access the parent function because we are reffering to the object itself.
+
+undefined   This is bacause in this function name is not defined because it is  a new scope which is an empty object.
+bar   the function can still access the name because variable self has reach to this identifier
+                  bacause it is still in one scope.
+
+
+
+
+Question4
+this identifier has been used as a refference to the parent function in non-strict mode.
+    
+
+ -->
